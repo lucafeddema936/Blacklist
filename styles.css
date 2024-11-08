@@ -1,0 +1,75 @@
+/* Algemene stijl voor de hele pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Achtergrond stijl */
+body, html {
+    height: 100%;
+    background: #111;
+    color: white;
+}
+
+/* De container voor de inhoud van de website */
+.container {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Achtergrondafbeelding */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('achtergrond.jpg'); /* Voeg hier de URL van je achtergrondafbeelding in */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+/* Logo styling */
+.logo img {
+    width: 200px;
+    margin-top: 50px;
+}
+
+/* Knoppen stijl */
+.buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Algemene knop stijl */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5b6eae;
+}
+
+/* Knoppen voor responsiviteit (mobiele apparaten) */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
